@@ -1,10 +1,24 @@
 @font-face {
   font-family: 'MyFont';
-  src: url(../fonts/Quorova/QurovaDEMO-SemiBold-BF67a5c637bcd0b.otf) format('woff2');
-  font-family: Satoshi;
-  src: url(../fonts/Satoshi) format(woff2);
+  src: url('../fonts/Quorova/QurovaDEMO-SemiBold-BF67a5c637bcd0b.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi/Satoshi-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Airbnb';
+  src: url('../fonts/AirbnbCereal/AirbnbCereal_W_Md.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Airbnb-lt';
+  src: url('../fonts/AirbnbCereal/AirbnbCereal_W_Lt.otf') format('opentype');
   
 }
+
 
 /* .nav-items{
 display: flex;
@@ -22,6 +36,7 @@ list-style: none;
 }  */
   body{
     background-color: #f6f6f6;
+    gap: px;
   }
 header {
 display: flex;
@@ -68,7 +83,7 @@ width: 108px;
 
 .logo-container a {
 color: #000;
-font-family: "Qurova DEMO";
+font-family: "Qurova DEMO";      
 font-size: 32px;
 font-style: normal;
 font-weight: 600;
@@ -103,7 +118,7 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 text-transform: capitalize;  
-width: 47%;
+width: 49%;
 }
 .header-text-2{
   color: #000;
@@ -113,13 +128,141 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 text-transform: lowercase;
-width: 47%; 
+width: 49%; 
 }
 
 
 .header-image-container img{
-  width : 47%;
-  height: 848px;
+  width : 49%; 
+  height: auto;
   object-fit: cover; 
   
+}
+
+/* product grid secton */
+.main{
+  margin-top: 60px; 
+  gap: 32px;
+  padding: 0px 32px; 
+  
+}
+.main h1{
+  color: #000;
+font-family: Satoshi;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: normal; 
+}
+
+.bags-grid {  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 2000px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1600px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1300px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .products-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .products-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  padding-bottom: 24px;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+
+.bag-image-container img{
+height: 100%;
+width: 100%;
+flex-shrink: 0;
+align-self: stretch;
+}
+.details-group{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+align-self: stretch;
+}
+
+.bag-condition{
+align-self: stretch;
+color: #000;
+font-family: AirbnbCereal_W_Lt;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.bag-name{
+align-self: stretch;
+color: #000;
+font-family: Airbnb;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.bag-price{
+align-self: stretch;
+color: #000;
+font-family: Airbnb-lt;
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+
+.grid-container button {
+height: 80px;
+width: 100%;
+flex-shrink: 0;
+background-color: #000;
+color: #FFF;
+font-family: Satoshi;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
