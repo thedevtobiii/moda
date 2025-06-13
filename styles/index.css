@@ -1,8 +1,12 @@
 @font-face {
   font-family: 'MyFont';
-  src: url('../fonts/Quorova/QurovaDEMO-SemiBold-BF67a5c637bcd0b.otf') format('woff2');
+  src: url(../fonts/Quorova/QurovaDEMO-SemiBold-BF67a5c637bcd0b.otf) format('woff2');
+  font-family: Satoshi;
+  src: url(../fonts/Satoshi) format(woff2);
+  
 }
-.nav-items{
+
+/* .nav-items{
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -15,4 +19,107 @@ list-style: none;
   justify-content: right;
   height: 100%;
   list-style: none; 
-} 
+}  */
+  body{
+    background-color: #f6f6f6;
+  }
+header {
+display: flex;
+padding: 0px 32px;
+flex-direction: column;
+gap: 128px;
+align-self: stretch;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  background: #f6f6f6;
+  list-style: none;
+  padding-left: 0%
+
+}
+
+.middle-nav li{
+padding: 2rem; 
+color: #000;
+font-family: Satoshi;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal; 
+}
+
+
+.nav-icons li {
+  padding: 1rem;
+}
+li a{
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.logo-container {
+width: 108px;
+
+}
+
+.logo-container a {
+color: #000;
+font-family: "Qurova DEMO";
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+/* header text and images style */
+.sub-header {
+display: flex;
+flex-direction: column;
+gap: 54px;
+align-self: stretch;  
+}
+.header-text-container{
+display: flex;
+align-self: stretch; 
+justify-content: space-between;
+}
+.header-text-conatainer p{
+  width: 47%;   
+}
+.header-image-container{
+  display: flex;
+  justify-content: space-between; 
+  align-self: stretch;
+}
+.header-text-1{
+color: #000;
+font-family: Satoshi;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;  
+width: 47%;
+}
+.header-text-2{
+  color: #000;
+font-family: Satoshi;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: lowercase;
+width: 47%; 
+}
+
+
+.header-image-container img{
+  width : 47%;
+  height: 848px;
+  object-fit: cover; 
+  
+}
