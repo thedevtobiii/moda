@@ -19,6 +19,12 @@
   
 }
 
+@font-face {
+  font-family: 'Airbnb-wbk';
+  src: url('../fonts/AirbnbCereal/AirbnbCereal_W_Bk.otf') format('opentype');
+  
+}
+
 
 /* .nav-items{
 display: flex;
@@ -37,6 +43,9 @@ list-style: none;
   body{
     background-color: #f6f6f6;
     gap: px;
+    margin-bottom: 0px; 
+    margin-left: 0px;
+    margin-right: 0px;  
   }
 header {
 display: flex;
@@ -229,7 +238,7 @@ align-self: stretch;
 .bag-condition{
 align-self: stretch;
 color: #000;
-font-family: AirbnbCereal_W_Lt;
+font-family: Airbnb-lt; 
 font-size: 20px;
 font-style: normal;
 font-weight: 300;
@@ -266,3 +275,75 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
+
+/* styling for the footer */
+footer{
+display: flex;
+padding: 32px 40px;
+justify-content: space-between;
+align-items: flex-start;
+align-self: stretch;
+background-color: #000;
+}
+.footer-content{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 40px;
+align-self: stretch;
+width: 60%; 
+}
+
+.footer-text{
+color: #FFF;
+font-family: Satoshi;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+width: 100%;
+}
+.subscribe-form{
+background-color: #000;  
+border-bottom: 2px solid #FFF; 
+width: 70%;
+height: 78px;
+flex-shrink: 0;
+}
+
+.footer-cta{
+color: #FFF;
+font-family: Airbnb-wbk;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize; 
+width: 100%; 
+}
+.footer-link{
+color: #f6f6f6;
+list-style: none;
+display: flex;
+width: 40%;   
+flex-direction: column;
+align-items: flex-start;
+gap: 80px;
+flex-shrink: 0;
+}
+.footer-link li{
+color: #FFF;
+font-family: Satoshi;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal; 
+}
+
+.nav-links-container{
+display: flex;
+width: 30%; 
+justify-content: space-between;
+align-items: center;
+}
+
